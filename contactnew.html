@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html>  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="http://akshitkumar.me/ineptitech/consource.css">
+    <link rel="stylesheet" href="http://akshitkumar.me/ineptitech/source.css">
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Hello Bulma!</title>
+    
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+    <style>
+
+        input{
+            position: absolute;
+            top: 500px;
+            text-align: center;
+            border-width: 0;
+            background: transparent;
+            border-bottom-width: 1px;
+            width: 30%;
+            left: 35%; 
+            font-size: 2vmax;
+            color: white;
+            opacity: 1;
+            font-family: 'IBM Plex Sans';
+  transition: border-bottom-width 0.4s ease-in-out;
+        }
+
+        .bar 	{ position:relative; left: 35%;top: -280px;display:block; width:30%; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#fff; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+
+
+.bar2 	{ position:relative; left: 35%;top: -280px;display:block; width:30%; }
+.bar2:before, .bar2:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#fff; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar2:before {
+  left:50%;
+}
+.bar2:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar2:before, input:focus ~ .bar2:after {
+  width:30%;
+  opacity: 1;
+}
+
+        
+
+        input:focus .bar:after {
+            border-bottom-width: 3px;
+            opacity: 1;
+            
+        }
+    
+        .button {
+  display: inline-block;
+  border-radius: 100px;
+  background-color: #fff;
+  border: none;
+  color: #000;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  width: 15%;
+  transition: all 0.5s;
+  cursor: pointer;
+  position: relative;
+  opacity: 0.7;
+
+  
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+    </style>
+  </head>
+  <body>
+        <div id="stars"></div>
+        <div id="stars2"></div>
+      <div class="bg"><p>Contact Us</p><h1>Got a question? We'd love to hear from you. We reply as soon as possible.</h1>
+       
+           
+           </div>
+
+           <input class="input" type="email" placeholder="youremail@example.com">
+           <span class="bar"></span>
+           <input class="input" type="text" placeholder="Josh Trump" style="top: 54%; width: 20%; left: 40%">
+           <span class="bar2" style="top: -41%"></span>
+           <input class="input" type="text" placeholder="The program started sucking my d" style="top: 68%">
+           <span class="bar2" style="top: -27%"></span>
+           <button class="button" style="vertical-align:middle; top: -200px;left: 42.5%;"><span>Shoot </span></button>
+           
+              
+           
+      
+  </body>
+
+
+  </html>
